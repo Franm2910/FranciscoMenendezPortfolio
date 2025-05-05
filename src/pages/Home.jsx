@@ -6,12 +6,13 @@ import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillsSection";
 import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection";
+import ColorSection from "../components/color";
+import { WhyFlux } from "../components/WhyFlux";
 export const Home = () => {
 
 return <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-    {/* Theme Toggle para cambiar de modo oscuro*/}
-    <ThemeToggle/> 
-
+    {/* Theme Toggle para cambiar de modo oscuro */}
+    <ThemeToggle/>
     {/* Background Effects*/}
     <StartBackground/> 
     {/* Nav Bar */}
@@ -23,7 +24,7 @@ return <div className="min-h-screen bg-background text-foreground overflow-x-hid
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
-        <ContactSection />
+        <WhyFlux />
     </main>
 
     {/* Footer */}

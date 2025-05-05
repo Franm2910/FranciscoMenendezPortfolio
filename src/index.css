@@ -165,6 +165,16 @@ padding-inline: 2rem;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
+@utility gradient-border-violeta {
+  @apply relative rounded-md;
+  background: linear-gradient(to right, #41125e, #41125e); /* fondo violeta */
+  background-clip: padding-box;
+  border: 1px solid transparent;
+
+  /* Borde violeta más brillante */
+  box-shadow: 0 0 0 1px #f05a28; 
+}
+
 #root {
 max-width: 100%;
 margin: 0 auto;

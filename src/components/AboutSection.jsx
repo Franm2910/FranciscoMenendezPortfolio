@@ -10,12 +10,14 @@ export const AboutSection = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
-                    <h3 className="text-2xl font-semibold">No se que voy a poner aacaaa</h3>
+                    <h3 className="text-2xl font-semibold">Quien es Fran?</h3>
                     <p className="text-muted-foreground">
-                        jrkejkjfdek
+                    Soy alguien apasionado por la tecnología, que disfruta de ir al gimnasio para mantenerse activo, 
+                    y valoro mucho pasar tiempo con amigos. Me gusta tanto hablar como escuchar, 
+                    siempre buscando compartir buenos momentos. Tengo una actitud alegre y positiva ante la vida.
                     </p>
                     <p className="text-muted-foreground">
-                        jrkejkjfdek
+                        jrkejskjfdek
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                         <a href="#contact" className="cosmic-button">

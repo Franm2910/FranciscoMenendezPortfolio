@@ -10,7 +10,10 @@ export const HeroSection = () => {
                     <span className="text-gradient opacity-0 animate-fade-in-delay-2"> Menendez</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground mx-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    agregar lo que soy
+                    Ingeniero en sistemas con 23 años. 
+                    Me considero una persona adaptable, siempre aprendiendo y con una gran conexión con la comunidad.
+                    Los viajes me han enseñado a conocer personas de diferentes culturas y a comunicarme de forma efectiva.
+                    Mi objetivo es seguir creciendo en lugares donde la tecnología, la comunidad y el propósito se unan para hacer un impacto positivo.
                 </p>
 
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4">

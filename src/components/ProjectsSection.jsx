@@ -4,7 +4,7 @@ const video = {
     id:1,
     title: "Video de mi experiencia",
     description: "En este video se presenta toda mi experiencia con mi trabajo",
-    video: "public/PresentaciónNaranjaXfinal.mp4",
+    video: "/PresentaciónNaranjaXfinal.mp4",
     tags:["trabajo", "Looker Studio", "IA", "Capacitaciones"]
 }
 

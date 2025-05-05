@@ -11,14 +11,14 @@ export const ThemeToggle = () => {
             document.documentElement.classList.add('dark');
             setIsDarkMode(true);
         } else {
-            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('dark');
             setIsDarkMode(false);
         }
     }, []);
     const toggleTheme = () => {
         if (isDarkMode) {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
             setIsDarkMode(false);
         } else {
             document.documentElement.classList.add('dark');
@@ -27,7 +27,7 @@ export const ThemeToggle = () => {
         }
     }
     
-    return (<button onClick={toggleTheme} className={cn('fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300',
+    return (<button onClick={toggleTheme} className={cn('fixed max-sm:hidden top-3.5 right-2 z-50 p-2 rounded-full transition-colors duration-300',
         'focus:outlin-hidden'
     )}> 
         {isDarkMode ?
