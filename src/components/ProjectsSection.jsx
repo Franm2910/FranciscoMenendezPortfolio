@@ -17,11 +17,11 @@ const imageData = [
     },
     {
       src: "/FotoIA.jpeg",
-      description: "Un proyecto de Inteligencia Artificial pensado para los Ejecutivos Comerciales de Holcim. Con mi equipo nos enfocamos en la gestión del proyecto."
+      description: "Un proyecto de Inteligencia Artificial pensado para los Ejecutivos Comerciales de Holcim. Con mi equipo nos centramos en la gestión integral del proyecto."
     },
     {
       src: "/FotoLooker.jpeg",
-      description: "Diseño de tableros con Looker Studio. Pensando en brindar la información que realmente necesita el usuario final."
+      description: "Diseño de tableros con Looker Studio, enfocados en brindar la información que realmente necesita el usuario final."
     }
   ]
 

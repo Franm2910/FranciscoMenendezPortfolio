@@ -43,7 +43,7 @@ export const AboutSection = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
-                    <h3 className="text-2xl font-semibold">Quien es Fran?</h3>
+                    <h3 className="text-2xl font-semibold">¿Quién es Fran?</h3>
                     <p className="text-muted-foreground">
                     Soy una persona apasionada por la tecnología, con una actitud positiva y muchas ganas de aprender. Me gusta mantenerme activo yendo al gimnasio, compartir momentos con amigos, 
                     hablar, escuchar y crear vínculos reales. Disfruto leer ciencia ficción, jugar juegos de mesa y siempre tengo algún dato curioso para sumar a la conversación.

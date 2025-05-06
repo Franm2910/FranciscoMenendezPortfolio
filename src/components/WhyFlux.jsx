@@ -24,7 +24,7 @@ export const WhyFlux = () => {
       id="WhyFlux"
       >
         <div className="min-h-[60vh] flex items-end justify-center px-8 transition-all duration-300 ease-in-out bg-gradient-to-b from-black via-[#41125e] to-[#f05a28] text-white">
-            <h2 className=" text-5xl font-bold text-center">Como me veo en NaranjaX</h2>
+            <h2 className=" text-5xl font-bold text-center">Cómo me veo en NaranjaX</h2>
         </div>
 
         {/* Aca va la info */}
@@ -32,9 +32,9 @@ export const WhyFlux = () => {
             <div className="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-12 bg-[#f05a28] items-center">
                     <div className="space-y-6 p-6">
                         <p className="text-muted-foreground text-xl text-justify font-bold">
-                        Cuando pienso en mi vida Naranja me veo en un empresa con un espacio donde puedo desarrollarme 
-                        técnicamente, aplicar mis habilidades para conectar con el usuario 
-                        y contribuir con soluciones innovadoras. 
+                        Cuando pienso en mi vida en Naranja, me imagino en una empresa que ofrece un espacio donde 
+                        puedo desarrollarme técnicamente, 
+                        aplicar mis habilidades para conectar con el usuario y contribuir con soluciones innovadoras.
                         </p>
                         <p className="text-muted-foreground font-black text-xl text-[#41125e]">
                         Me siento listo para aportar con autonomía, compromiso y una mirada centrada en el cliente y la comunidad.
@@ -48,7 +48,7 @@ export const WhyFlux = () => {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">Conectando con los valores</h4>
-                                <p className="text-muted-foreground">Me siento sumamente inspirados por los valores que impulsan a Naranja.</p>
+                                <p className="text-muted-foreground">Me siento sumamente inspirado por los valores que impulsan a Naranja.</p>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ export const WhyFlux = () => {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">Predipuesto a dar el primer paso</h4>
-                                <p className="text-muted-foreground">No solo se trata de recibir trabajo quiero buscar la necesidad y satisfacerla</p>
+                                <p className="text-muted-foreground">No solo se trata de recibir trabajo quiero salir a buscar la necesidad y cubrirla</p>
                             </div>
                         </div>
                         </div>
