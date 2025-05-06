@@ -13,6 +13,14 @@ const images = [
     "/FotoViaje.jpeg"
     
   ]
+  const images2 = [
+    "/1.jpg",
+    "/2.jpg",
+    "/3.jpg",
+    "/4.jpg",
+    "/5.jpg",
+    
+  ]
   
 
 export const AboutSection = () => {
@@ -54,18 +62,15 @@ export const AboutSection = () => {
                 </div>
                 <div className="overflow-hidden" ref={emblaRef}>
                     <div className="flex">
-                        {images.map((src, index) => (
+                        {images2.map((src, index) => (
                         <div className="min-w-full flex-shrink-0 p-2" key={index}>
-                            <div className="w-full h-64 relative">
                             <img
-                                src={src}
-                                alt={`Slide ${index + 1}`}
-                                className="w-full h-full object-cover rounded-2xl shadow-lg"
+                            src={src}
+                            alt={`Slide ${index + 1}`}
+                            className="w-full h-64 object-cover rounded-2xl shadow-lg max-w-full sm:max-w-[720px] md:max-w-[1024px]"
                             />
-                            </div>
                         </div>
                         ))}
-                    </div>
                     </div>
 
                     <div className="flex justify-between mt-4">
@@ -85,6 +90,7 @@ export const AboutSection = () => {
                 </div>
 
             </div>
+        </div>
 
     </section>)
 }
