@@ -10,10 +10,12 @@ export const HeroSection = () => {
                     <span className="text-gradient opacity-0 animate-fade-in-delay-2"> Menendez</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground mx-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    Ingeniero en sistemas con 23 años. 
-                    Me considero una persona adaptable, siempre aprendiendo y con una gran conexión con la comunidad.
-                    Los viajes me han enseñado a conocer personas de diferentes culturas y a comunicarme de forma efectiva.
-                    Mi objetivo es seguir creciendo en lugares donde la tecnología, la comunidad y el propósito se unan para hacer un impacto positivo.
+                Ingeniero en Sistemas de Información
+                Soy una persona curiosa, adaptable y siempre en movimiento. 
+                Me apasiona la tecnología y cómo puede usarse para mejorar la vida de las personas. 
+                Valoro mucho la comunidad y el poder de la conexión humana. 
+                Viajar me enseñó a salir de mi zona de confort, escuchar con empatía y comunicarme con personas de distintas realidades. 
+                Busco crecer en espacios donde la tecnología, la comunidad y el propósito se encuentren para generar un impacto real y positivo.
                 </p>
 
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4">

@@ -3,14 +3,32 @@ import { act, useState } from "react"
 import { cn } from "../lib/utils"
 
 const skills = [
-    { name: "Cebar Mates", level: 35, category: "Social"},
-    { name: "Cocinar", level: 75, category: "Social"},
-    { name: "Alto capo soy", level: 100, category: "Social"},
-    //otracategoria
-    { name: "Leer", level: 35, category: "Nerd"},
+    { name: "JavaScript", level: 70, category: "Técnico"},
+    { name: "Python", level: 70, category: "Técnico"},
+    { name: "SQL", level: 65, category: "Técnico"},
+    { name: "Jupyter", level: 65, category: "Técnico"},
+    { name: "VS Code", level: 85, category: "Técnico"},
+    { name: "SAP", level: 80, category: "Técnico"},
+    { name: "SCRUM", level: 90, category: "Técnico"},
+    { name: "KanBan", level: 95, category: "Técnico"},
+    { name: "Metodologías Agiles", level: 90, category: "Técnico"},
+    //Categoría personal:
+    { name: "Adaptabilidad", level: 95, category: "Blandas" },
+    { name: "Comunicación", level: 90, category: "Blandas" },
+    { name: "Trabajo en equipo", level: 85, category: "Blandas" },
+    { name: "Autonomía", level: 90, category: "Blandas" },
+    { name: "Empatía", level: 85, category: "Blandas" },
+    { name: "Pensamiento creativo", level: 90, category: "Blandas" },
+    { name: "Resolución de problemas", level: 80, category: "Blandas" },
+    { name: "Gestión del tiempo", level: 80, category: "Blandas" },
+    { name: "Escucha activa", level: 85, category: "Blandas" },
+    { name: "Actitud positiva", level: 95, category: "Blandas" },
+    { name: "Negociación", level: 65, category: "Blandas" },
+    { name: "Pensamiento estratégico", level: 70, category: "Blandas" },
+    { name: "Liderazgo de equipos", level: 60, category: "Blandas" }
 ]
 
-const categories = ["Todas", "Social", "Nerd"]
+const categories = ["Todas", "Técnico", "Blandas"]
 
 export const SkillsSection = () => {
 

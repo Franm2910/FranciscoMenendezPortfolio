@@ -30,7 +30,7 @@ export const WhyFlux = () => {
         {/* Aca va la info */}
         <div className="bg-[#f05a28] mx-auto">
             <div className="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-12 bg-[#f05a28] items-center">
-                    <div className="space-y-6">
+                    <div className="space-y-6 p-6">
                         <p className="text-muted-foreground text-xl text-justify font-bold">
                         Cuando pienso en mi vida Naranja me veo en un empresa con un espacio donde puedo desarrollarme 
                         técnicamente, aplicar mis habilidades para conectar con el usuario 

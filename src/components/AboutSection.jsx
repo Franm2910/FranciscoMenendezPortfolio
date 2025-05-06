@@ -1,6 +1,30 @@
 import { Code } from "lucide-react"
+import { useCallback } from "react"
+import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
+
+
+const images = [
+    "/FotoFran.jpg",
+    "/FotoAmigos.jpeg",
+    "/FotoFamilia.jpeg",
+    "/FotoFacu.jpeg",
+    "/FotoIng.jpeg",
+    "/FotoViaje.jpeg"
+    
+  ]
+  
 
 export const AboutSection = () => {
+    
+    const autoplay = Autoplay({ delay: 4000, stopOnInteraction: false })
+
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [autoplay])
+    
+    const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi])
+    const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi])
+
+    
     return (
     <section id="about" className="py-24 px-4 relative">
         <div className="container mx-auto max-w-5xl">
@@ -12,51 +36,48 @@ export const AboutSection = () => {
                 <div className="space-y-6">
                     <h3 className="text-2xl font-semibold">Quien es Fran?</h3>
                     <p className="text-muted-foreground">
-                    Soy alguien apasionado por la tecnología, que disfruta de ir al gimnasio para mantenerse activo, 
-                    y valoro mucho pasar tiempo con amigos. Me gusta tanto hablar como escuchar, 
-                    siempre buscando compartir buenos momentos. Tengo una actitud alegre y positiva ante la vida.
+                    Soy una persona apasionada por la tecnología, con una actitud positiva y muchas ganas de aprender. Me gusta mantenerme activo yendo al gimnasio, compartir momentos con amigos, 
+                    hablar, escuchar y crear vínculos reales. Disfruto leer ciencia ficción, jugar juegos de mesa y siempre tengo algún dato curioso para sumar a la conversación.
                     </p>
                     <p className="text-muted-foreground">
-                        jrkejskjfdek
+                    Valoro mucho salir de la zona de confort, porque ahí es donde más aprendo y crezco. Me mueve la curiosidad, 
+                    el deseo de entender el mundo y la intención de aportar desde lo que soy. Busco rodearme de personas con propósito y seguir creciendo en ambientes donde pueda ser yo mismo, crear, conectar y disfrutar el proceso.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                        <a href="#contact" className="cosmic-button">
-                            Contacto
+                        <a href="#projects" className="cosmic-button">
+                            Experiencia
                         </a>
                         <a href="/Francisco Menendez CV.pdf" download="Francisco Menendez CV" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
                             Curriculum
                         </a>
                     </div>
                 </div>
-            <div className="grid grid-cols-1 gap 6">
-                    <div className="gradient-border p-6 card-hover">
-                        <div className="flex items-start gap-4">
-                            <div className="p-3 rounded-full bg-primary/10">
-                                <Code className='h-6 w-6 text-primary'/>
-                            </div>
-                            <div className="text-left">
-                                <h4 className="font-semibold text-lg">Desarrollo</h4>
-                                <p className="text-muted-foreground">Señor presidente si yo no soy mujer, porque su hermana parece una travesti? AMOR</p>
-                            </div>
+                <div className="overflow-hidden" ref={emblaRef}>
+                    <div className="flex">
+                        {images.map((src, index) => (
+                        <div className="min-w-full flex-shrink-0 p-2" key={index}>
+                            <img
+                            src={src}
+                            alt={`Slide ${index + 1}`}
+                            className="w-full h-64 object-cover rounded-2xl shadow-lg"
+                            />
                         </div>
+                        ))}
                     </div>
-                    <div className="gradient-border p-6 card-hover">
-                        <div>
-                        <div className="flex items-start gap-4">
-                            <div className="p-3 rounded-full bg-primary/10">
-                                <Code className='h-6 w-6 text-primary'/>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div className="gradient-border p-6 card-hover">
-                        <div>
-                        <div className="flex items-start gap-4">
-                            <div className="p-3 rounded-full bg-primary/10">
-                                <Code className='h-6 w-6 text-primary'/>
-                            </div>
-                        </div>
-                        </div>
+
+                    <div className="flex justify-between mt-4">
+                        <button
+                        onClick={scrollPrev}
+                        className="px-4 py-2 bg-[#41125e] text-white rounded-lg"
+                        >
+                        ◀
+                        </button>
+                        <button
+                        onClick={scrollNext}
+                        className="px-4 py-2 bg-[#41125e] text-white rounded-lg"
+                        >
+                        ▶
+                        </button>
                     </div>
                 </div>
 
