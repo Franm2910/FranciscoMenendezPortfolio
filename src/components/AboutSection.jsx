@@ -67,7 +67,7 @@ export const AboutSection = () => {
                             <img
                             src={src}
                             alt={`Slide ${index + 1}`}
-                            className="w-full h-64 object-cover rounded-2xl shadow-lg max-w-full sm:max-w-[720px] md:max-w-[1024px]"
+                            className="w-full h-64 object-contain rounded-2xl shadow-lg max-w-full sm:max-w-[720px] md:max-w-[1024px]"
                             />
                         </div>
                         ))}
@@ -87,7 +87,7 @@ export const AboutSection = () => {
                         ▶
                         </button>
                     </div>
-                </div>
+                    </div>
 
             </div>
         </div>
