@@ -19,6 +19,7 @@ const images = [
     "/3.jpg",
     "/4.jpg",
     "/5.jpg",
+    "/6.jpg"
     
   ]
   
@@ -48,7 +49,7 @@ export const AboutSection = () => {
                     hablar, escuchar y crear vínculos reales. Disfruto leer ciencia ficción, jugar juegos de mesa y siempre tengo algún dato curioso para sumar a la conversación.
                     </p>
                     <p className="text-muted-foreground">
-                    Valoro mucho salir de la zona de confort, porque ahí es donde más aprendo y crezco. Me mueve la curiosidad, 
+                    Me mueve la curiosidad, 
                     el deseo de entender el mundo y la intención de aportar desde lo que soy. Busco rodearme de personas con propósito y seguir creciendo en ambientes donde pueda ser yo mismo, crear, conectar y disfrutar el proceso.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
