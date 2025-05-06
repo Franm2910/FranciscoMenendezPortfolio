@@ -56,13 +56,16 @@ export const AboutSection = () => {
                     <div className="flex">
                         {images.map((src, index) => (
                         <div className="min-w-full flex-shrink-0 p-2" key={index}>
+                            <div className="w-full h-64 relative">
                             <img
-                            src={src}
-                            alt={`Slide ${index + 1}`}
-                            className="w-full h-64 object-cover rounded-2xl shadow-lg"
+                                src={src}
+                                alt={`Slide ${index + 1}`}
+                                className="w-full h-full object-cover rounded-2xl shadow-lg"
                             />
+                            </div>
                         </div>
                         ))}
+                    </div>
                     </div>
 
                     <div className="flex justify-between mt-4">
@@ -82,7 +85,6 @@ export const AboutSection = () => {
                 </div>
 
             </div>
-        </div>
 
     </section>)
 }
